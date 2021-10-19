@@ -1,5 +1,7 @@
 #!/bin/bash
 
 echo "Replacing Yocto build config"
-rm rpi3-build/conf/local.conf
-cp yocto-build-script/local.conf rpi3-build/conf/local.conf
+rm ./rpi3-build/conf/local.conf
+cp ./yocto-build-script/local.conf ./rpi3-build/conf/local.conf
+cp ./yocto-build-script/build ./build
+chmod +x ./build
