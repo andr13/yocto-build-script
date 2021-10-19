@@ -3,5 +3,6 @@
 echo "Replacing Yocto build config"
 rm ./rpi3-build/conf/local.conf
 cp ./yocto-build-script/local.conf ./rpi3-build/conf/local.conf
+echo "Preparing build script"
 cp ./yocto-build-script/build ./build
 chmod +x ./build
